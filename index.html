@@ -18,45 +18,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--Smooth Scrolling-->
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-</script>
-
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="80" data-target="#thenavbar">
 <a id="top" class="scroll"></a>
 
 <!-- Static navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -64,11 +35,11 @@
             </button>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a class="smoothscroll" href="works.html">Works</a></li>
-                <li><a class="smoothscroll" href="contact.html">Contact</a></li>
+            <ul class="nav navbar-nav navbar-center">
+                <li class="active"><a href="#top">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="smoothscroll">Works</a></li>
+                <li><a href="#" class="smoothscroll">Contact</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -82,23 +53,32 @@
             <div class="col-lg-6 col-lg-offset-3">
                 <h4>HELLO PEOPLE, MY NAME IS</h4>
                 <h1>DARIUS YIK</h1>
-                <h4>WEB DESIGNER, DEVELOPER & GAME ADDICT</h4>
+                <h4>SFU Student & Software Engineer</h4>
             </div>
         </div>
     </div>
     <!-- /container -->
 </div>
 
+<section id="aboutme"></section>
 <div class="container">
-    <div class="row">
-        <div class="col-lg-5 centered">
-            <img src="img/iphone.png" alt="">
-        </div>
-
-        <div class="col-lg-7 centered">
-            <h3>WHAT WE CAN DO?</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
+    <div class="row centered mt mb">
+        <h1>About Me</h1>
+        <h4>Hello! My name is Darius Yik from Vancouver, British Columbia, Canada. I enjoy playing reading non-fictional books, playing League of Legends.
+            I also playing badminton, ping pong, ultimate frisbee, and hiking!
+            Here's a little information about me!</h4>
+        <h3>School</h3>
+        <h4>Simon Fraser University</h4>
+        <h5>Bachelor's of Science:</h5>
+        <h5>Joint Major in Computing Science and Molecular Biology & Biochemistry(MBB)</h5>
+        <h3>Work Experience</h3>
+        <h5>Jan 2018 - Dec 2018</h5>
+        <h4>SAP - Business Intelligence Developer Intern
+                - D-Shop Software Engineer</h4>
+        <h5>Sep 2016 - Dec 2016</h5>
+        <h4>Malachite Management (Stemcell Technologies) - Website Project Coordinator</h4>
+        <h5>Sep 2015 - Apr 2016</h5>
+        <h4>Genome Sciences Centre - Support Client Technician Intern</h4>
     </div>
 </div>
 
@@ -108,35 +88,44 @@
         <h1>My Portfolio</h1>
 
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="works.html"><img src="img/portfolio/folio01.png" class="img-responsive"></a>
+            <a href="#"><img src="img/portfolio/folio01.png" class="img-responsive"></a>
+            <h2>ALBION</h2>
+            <h3>In Progess</h3>
+            <h4>A 2D-Text based, choose & click your own adventure game</h4>
+            <h4>Built using MERN stack, hosted on AWS</h4>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
             <a href="works.html"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+            <h2>SAP Stall Finder</h2>
+            <h3>SAP iXp Hackathon Spring 2018</h3>
+            <h4>A webapp to help employees find open washroom stalls</h4>
+            <h4>Built using SAPUI5 web framework and SAP HANA database, hosted on SAP Cloud Platform</h4>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="works.html"><img src="img/portfolio/folio03.png" class="img-responsive"></a>
+            <a href="works.html"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+            <h2>Mytinerary</h2>
+            <h3>Hack the North 2017 Hackathon</h3>
+            <h4>A webapp for travellers to create an itinerary of popular foods and attractions for a selected destination </h4>
+            <h4>Written with HTML/CSS, and jQuery, and used Firebase for hosting of demo. Implemented Google Maps API to
+                provide city location autocomplete, and Yelp API to search for popular attractions.</h4>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="works.html"><img src="img/portfolio/folio04.png" class="img-responsive"></a>
+            <a href="works.html"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+            <h2>Your SFU Companion</h2>
+            <h3>SFU CMPT 276 Course Group Project</h3>
+            <h4>A webapp for to aggregate SFU students' multiple resources into one place.</h4>
+            <h4></h4>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="works.html"><img src="img/portfolio/folio05.png" class="img-responsive"></a>
+            <a href="works.html"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+            <h2>Printer Installtion Script for Macs</h2>
+            <h3></h3>
+            <h4></h4>
+            <h4></h4>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="works.html"><img src="img/portfolio/folio06.png" class="img-responsive"></a>
-        </div>
+
     </div>
 </div>
-
-<a id="contactme" class="smooth"></a>
-<div class="ContactMe flexContent" width="100%">
-  <span class="content-header">Contact Me</span>
-  <p>Cell Phone: <br />
-    778-251-6225</p>
-  <p>Email: <br />
-     <a href="mailto:darius.yik@gmail.com">darius.yik@gmail.com</a></p>
-</div>
-<a href="#" class="fa fa-facebook"></a>
 
 <div id="social">
     <div class="container">
@@ -145,17 +134,17 @@
                 <a href="#"><i class="fa fa-envelope"></i></a>
             </div>
             <div class="col-lg-2">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="col-lg-2">
                 <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>
             <div class="col-lg-2">
                 <a href="#"><i class="fa fa-github"></i></a>
             </div>
+
         </div>
     </div>
 </div>
-
-
-
-</body>
 
 </html>

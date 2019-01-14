@@ -1,74 +1,8 @@
-body {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 80px; /* For footer in future */
-  background-color: grey;
-  color: white;
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
 }
-
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: white;
-}
-
-/*-------Header-------*/
-
-li {
-  display: inline;
-}
-
-.namePlate {
-  letter-spacing: 10px;
-  padding-top: 200px;
-  font-size: 60px;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  font-family: 'Kaushan Script', cursive;
-}
-
-.navbar {
-  width: 100vw;
-  height: 17px;
-  border-bottom: 1px solid black;
-  text-align: center;
-  font-family: 'Playball', cursive;
-}
-.navLine {
-  color: black;
-  font-style: normal;
-  font-weight: lighter;
-}
-
-.menuitems, .content-header {
-  font-size: 25px;
-  background-color: grey;
-  padding: 0 10px;
-  font-family: 'Playball', cursive;
-}
-
-
-/*----Content Area----*/
-.bodyWrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.flexContent {
-  display: block;
-  height: auto;
-}
-
-
-/*TODO: Make projects items show up as row*/
-.projectItem {
-  flex-direction: row;
-}
-
 
 #social {
   padding-top: 50px;
