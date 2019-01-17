@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playball|Satisfy|Kaushan+Script" rel="stylesheet">
 
     <!-- Favicon -->
-    <link href="img/favicon.png" rel="icon">
+    <link href="img/favicon.ico" rel="icon">
 
     <!-- CDN Libraries-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -24,7 +24,7 @@
 <a id="top" class="scroll"></a>
 
 <!-- Static navbar -->
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div id="thenavbar" class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,12 +35,12 @@
             </button>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-center">
-                <li class="active"><a href="#top">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#" class="smoothscroll">Work Experience</a></li>
-                <li><a href="#" class="smoothscroll">My Projects</a></li>
-                <li><a href="#" class="smoothscroll">Contact Me</a></li>
+            <ul class="nav navbar-nav navbar-center active">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#workexperience">Work Experience</a></li>
+                <li><a href="#portfolio">My Projects</a></li>
+                <li><a href="#social">Contact Me</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -49,9 +49,8 @@
 
 <div class="name">
     <div class="row centered mt mb">
-        <h4>HELLO PEOPLE, MY NAME IS</h4>
+        <h1>WELCOME</h1>
         <h1>DARIUS YIK</h1>
-        <h4>SFU Student & Software Engineer</h4>
     </div>
 </div>
 
@@ -64,9 +63,11 @@
 <div class="container">
     <div class="row centered mt mb">
         <h1>About Me</h1>
-        <h4>Hello! My name is Darius Yik from Vancouver, British Columbia, Canada. I enjoy playing reading non-fictional books, playing League of Legends.
-            I also playing badminton, ping pong, ultimate frisbee, and hiking!
-            Here's a little information about me!</h4>
+        <h2>Hello!</h2>
+        <h4>My name is Darius Yik and I am a Software Engineer from Vancouver, British Columbia, Canada.</h4>
+        <h4>I enjoy
+            - hanging out with friends, reading non-fictional books, and playing League of Legends.
+            I also playing badminton, ping pong, ultimate frisbee, and hiking!</h4>
         <h3>School</h3>
         <h4>Simon Fraser University</h4>
         <h5>Bachelor's of Science:</h5>
@@ -93,23 +94,22 @@
 <div class="container">
     <div class="row centered mt mb">
         <h1>My Portfolio</h1>
-
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="#"><img src="img/portfolio/folio01.png" class="img-responsive"></a>
+            <a href=""><img src="img/portfolio/folio01.png" class="img-responsive"></a>
             <h2>ALBION</h2>
             <h3>In Progess</h3>
             <h4>A 2D-Text based, choose & click your own adventure game</h4>
             <h4>Built using MERN stack, hosted on AWS</h4>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="works.html"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+            <a href=""><img src="img/portfolio/folio02.png" class="img-responsive"></a>
             <h2>SAP Stall Finder</h2>
             <h3>SAP iXp Hackathon Spring 2018</h3>
             <h4>A webapp to help employees find open washroom stalls</h4>
             <h4>Built using SAPUI5 web framework and SAP HANA database, hosted on SAP Cloud Platform</h4>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="works.html"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+            <a href=""><img src="img/portfolio/folio02.png" class="img-responsive"></a>
             <h2>Mytinerary</h2>
             <h3>Hack the North 2017 Hackathon</h3>
             <h4>A webapp for travellers to create an itinerary of popular foods and attractions for a selected destination </h4>
@@ -117,29 +117,36 @@
                 provide city location autocomplete, and Yelp API to search for popular attractions.</h4>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="works.html"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+            <a href=""><img src="img/portfolio/folio02.png" class="img-responsive"></a>
             <h2>Your SFU Companion</h2>
             <h3>SFU CMPT 276 Course Group Project</h3>
             <h4>A webapp for to aggregate SFU students' multiple resources into one place.</h4>
             <h4>Built using Ruby on Rails and hosted on Heroku. Implemented SFU and Google Maps APIs</h4>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="works.html"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
-            <h2>Printer Installtion Script for Macs</h2>
+            <a href=""><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+            <h2>Printer Installation Script for Macs</h2>
             <h3>Genome Sciences Centre Coop Project</h3>
             <h4>Shell Script used to install printers onto computers within the company </h4>
         </div>
-
     </div>
 </div>
 
 <div id="social">
     <div class="container">
-        <div class="social">
-            <a href="#"><i class="fa fa-envelope"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
+        <h1 class="contactme">Contact Me</h1>
+        <div class="row centered mt mb social">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-2">
+                <a href="mailto:darius.yik@gmail.com" class="centerimg"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="https://www.linkedin.com/in/darius-yik/" target="_blank" class="centerimg"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="https://github.com/grimtekk" target="_blank" class="centerimg"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="col-xs-3"></div>
         </div>
     </div>
 </div>
