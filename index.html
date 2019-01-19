@@ -15,37 +15,39 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!-- CDN Libraries-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css" integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body data-spy="scroll" data-offset="80" data-target="#thenavbar">
+<body data-spy="scroll" data-offset="50" data-target=".nav">
 <a id="top" class="scroll"></a>
 
 <!-- Static navbar -->
-<div id="thenavbar" class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-center active">
-                <li><a href="#top">Home</a></li>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#workexperience">Work Experience</a></li>
-                <li><a href="#portfolio">My Projects</a></li>
-                <li><a href="#social">Contact Me</a></li>
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
     </div>
-</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li><a class="nav-link" href="#top">Home</a></li>
+            <li><a class="nav-link" href="#aboutme">About Me</a></li>
+            <li><a class="nav-link" href="#workexperience">Work Experience</a></li>
+            <li><a class="nav-link" href="#portfolio">My Projects</a></li>
+            <li><a class="nav-link" href="#social">Contact Me</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
 
 <div class="name">
     <div class="row centered mt mb">
@@ -94,21 +96,21 @@
 <div class="container">
     <div class="row centered mt mb">
         <h1>My Portfolio</h1>
-        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <div class="col-lg-4 col-md-4 col-sm-6 gallery">
             <a href=""><img src="img/portfolio/folio01.png" class="img-responsive"></a>
             <h2>ALBION</h2>
             <h3>In Progess</h3>
             <h4>A 2D-Text based, choose & click your own adventure game</h4>
             <h4>Built using MERN stack, hosted on AWS</h4>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <div class="col-lg-4 col-md-4 col-sm-6 gallery">
             <a href=""><img src="img/portfolio/folio02.png" class="img-responsive"></a>
             <h2>SAP Stall Finder</h2>
             <h3>SAP iXp Hackathon Spring 2018</h3>
             <h4>A webapp to help employees find open washroom stalls</h4>
             <h4>Built using SAPUI5 web framework and SAP HANA database, hosted on SAP Cloud Platform</h4>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <div class="col-lg-4 col-md-4 col-sm-6 gallery">
             <a href=""><img src="img/portfolio/folio02.png" class="img-responsive"></a>
             <h2>Mytinerary</h2>
             <h3>Hack the North 2017 Hackathon</h3>
@@ -116,18 +118,23 @@
             <h4>Written with HTML/CSS, and jQuery, and used Firebase for hosting of demo. Implemented Google Maps API to
                 provide city location autocomplete, and Yelp API to search for popular attractions.</h4>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <div class="col-lg-4 col-md-4 col-sm-6 gallery">
             <a href=""><img src="img/portfolio/folio02.png" class="img-responsive"></a>
             <h2>Your SFU Companion</h2>
             <h3>SFU CMPT 276 Course Group Project</h3>
             <h4>A webapp for to aggregate SFU students' multiple resources into one place.</h4>
             <h4>Built using Ruby on Rails and hosted on Heroku. Implemented SFU and Google Maps APIs</h4>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <div class="col-lg-4 col-md-4 col-sm-6 gallery">
             <a href=""><img src="img/portfolio/folio02.png" class="img-responsive"></a>
             <h2>Printer Installation Script for Macs</h2>
             <h3>Genome Sciences Centre Coop Project</h3>
             <h4>Shell Script used to install printers onto computers within the company </h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 gallery">
+            <a href=""><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+            <h2>This Website!</h2>
+            <h4>Built using simple HTML/CSS and JavaScript, with jQuery, Bootstrap and Font Awesome libraries</h4>
         </div>
     </div>
 </div>
