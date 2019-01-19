@@ -31,7 +31,7 @@
   color: #1abc9c
 }
 
-.name {
+.name, .welcome {
   /* Position text in the center of the screen (horizontally & vertically) */
   z-index: 100;
   position: absolute;
