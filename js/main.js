@@ -10,4 +10,7 @@ $(document).ready(function(){
 
     // Header Image
     $('.header').height($(window).height());
+    window.onresize = function() { // re-size accordingly
+        $('.header').height($(window).height());
+    };
 })

@@ -1,5 +1,5 @@
 /* navbar */
-.navbar-brand{margin-left: 1em !important;}
+.navbar-brand{margin-left: 2em !important;}
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 .nav-link{ margin-right: 1em !important;}
 .nav-link:hover, .navbar-brand:hover{ color: #f97300; }
@@ -64,6 +64,7 @@
 /* portfolio */
 .portfolio{
     margin: 4em 0;
+    padding: 1em;
     position: relative;
 }
 .portfolio h1{
