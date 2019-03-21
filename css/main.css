@@ -39,15 +39,14 @@
     margin: 2em;
 }
 .about img{
-    height: 100%;
-    width: 100%;
-    border-radius: 50%
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
 }
 .about span{
     display: block;
     color: #888;
     position: absolute;
-    left: 115px;
 }
 .about .desc{
     padding: 2em;
@@ -79,17 +78,15 @@
 
 /* contact me */
 .contact-form{
-    margin: 6em 0;
+    margin: 4em 0;
+    padding: 1em;
     position: relative;
 }
 .contact-form h1{
-    padding:2em 1px;
+    margin: 2em;
     color: #F97300;
 }
-.contact-form .right{
-    max-width: 600px;
-}
-.contact-form .right .btn-secondary{
+.contact-form .form .btn-secondary{
     background:  #F97300;
     color: #fff;
     border:0;
