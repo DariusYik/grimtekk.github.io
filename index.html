@@ -9,6 +9,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -40,11 +41,13 @@
     <!-- header -->
     <header class="header" id="top">
         <div class="container">
-            <div class="description ">
-                <h1>    Darius Yik
-                    <button class="btn btn-outline-secondary btn-lg">See more</button>
-                </h1>
+            <div class="row description text-center">
+                <h1 class="text-center">Darius Yik</h1>
             </div>
+            <!-- Change to arrow down button in the future
+            <div class="row headerBtn">-->
+                <!--<button class="btn btn-outline-secondary btn-lg">Next</button>-->
+            <!--</div>-->
         </div>
     </header>
 
@@ -80,6 +83,11 @@
         <!-- work experience -->
         <div class="container work" id="work">
             <h2 class="text-center">Work Experience</h2>
+            <div class="row resume">
+                <a href="./docs/DariusYikResume.pdf" download>
+                    <button class="btn btn-secondary btn-block"><i class="fa fa-download"></i>Download Resume</button>
+                </a>
+            </div>
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-2">
                     <img src="img/sap-logo.svg" class="img-fluid">
@@ -143,27 +151,117 @@
         <div class="container project" id="project">
             <h2 class="text-center">Projects</h2>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <img src="img/.png" class="img-fluid">
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/posts/polit.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">ALBION</h4>
+                            <p class="card-text">
+                                Work In Progress!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <img src="img/.png" class="img-fluid">
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/posts/images.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">SAP Stall Finder</h4>
+                            <p class="card-text">
+                                Webapp to find where the open available bathroom stalls in the SAP Vancouver office.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <img src="img/.png" class="img-fluid">
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/posts/imag2.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Mytinerary</h4>
+                            <p class="card-text">
+                                Webapp to find help travelers create an itenrary consiting of popular attractions in a location.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <img src="img/.png" class="img-fluid">
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/posts/polit.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Your SFU Companion</h4>
+                            <p class="card-text">
+                                Webapp to aggregate all of SFU's different student resources into one website!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <img src="img/.png" class="img-fluid">
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/posts/images.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Printer Installation Script</h4>
+                            <p class="card-text">
+                                Bash script to automatically install the latest printer drivers onto macs on new deployment.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <img src="img/.png" class="img-fluid">
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/posts/imag2.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">This Website!</h4>
+                            <p class="card-text">
+                                My one page website portfolio built using Bootstrap 4.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
+
+
+
 
     <!-- contact section -->
     <div class="contact-form" id="contact">
@@ -187,11 +285,21 @@
                     </div>
                 </div>
             </form>
+        </div>
 
-            <a href="./img/Assignment3.pdf" download>
-                <button class="btn"><i class="fa fa-download"></i> Download</button>
-            </a>
-
+        <!-- social media -->
+        <div class="container">
+            <div class="social">
+                <a href="#" class="">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" class="">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
     </div>
 

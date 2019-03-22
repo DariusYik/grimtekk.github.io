@@ -15,9 +15,8 @@
 }
 .description{
     position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
+    top: 35%;
+    left: 44%;
 }
 .description h1{
     color:#F97300 ;
@@ -74,6 +73,50 @@
     height: 15rem;
     width: 100%;
     margin: 1em;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.project .row{
+    padding-top: 2em;
+}
+.project .item{
+    position: relative;
+    overflow: hidden;
+}
+.project h1{
+    color:#F97300;
+    margin: 2em;
+}
+.project .card{
+    box-shadow: 0 0 20px #ccc;
+    height: 25em;
+}
+.project .card img{
+    width: 95%;
+    height: 12em;
+}
+.project .card-title{
+    color:#F97300;
+
+}
+.project .card-body{
+    padding: 1em;
+    overflow-y: scroll;
+}
+
+/*Hover effect for projects*/
+.portfolio .item:hover .card{
+    background:#f973007d;
+    position: relative;
+    width: 100%;
+    top: 0;
+    border-bottom-left-radius: 0;
+    transition:.3s ease-in-out;
 }
 
 /* contact me */
