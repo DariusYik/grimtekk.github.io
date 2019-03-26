@@ -61,6 +61,7 @@
 
 /* portfolio */
 .portfolio{
+    background-color: darkgrey;
     margin: 4em 0;
     padding: 1em;
     position: relative;
@@ -137,4 +138,20 @@
 .contact-form .right .form-control::placeholder{
     color: #888;
     font-size: 16px;
+}
+
+/* social media */
+.social{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.social a {
+    font-size: 2rem;
+}
+
+.contact-form h3 {
+    color: #10828C;
+    padding-bottom: 1em;
 }
