@@ -1,4 +1,5 @@
 /* navbar */
+.navbar{background-color: darkgrey;}
 .navbar-brand{margin-left: 2em !important;}
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 .nav-link{ margin-right: 1em !important;}
@@ -19,7 +20,7 @@
     left: 44%;
 }
 .description h1{
-    color:#F97300 ;
+    color: ghostwhite;
 }
 .description button{
     border:1px  solid #F97300;
@@ -35,35 +36,93 @@
 }
 .about h1{
     color:#F97300;
-    margin: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 .about img{
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
 }
-.about span{
-    display: block;
-    color: #888;
+.quote .quote-content{
+    margin: 10px 0 50px 0;
+    position: relative;
+}
+.quote .quote-content:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-top: 20px solid #dca842;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+.quote .quote-description{
+    padding: 25px 35px;
+    margin: 0;
+    background: #dca842;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+/*Boxes for the quotations*/
+.quote .quote-description:before,
+.quote .quote-description:after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 8px;
+    text-align: center;
+    background: #dca842;
     position: absolute;
 }
-.about .desc{
-    padding: 2em;
-    border-left:4px solid #10828C;
+/*top quotation image*/
+.quote .quote-description:before{
+    content: "\f10d";
+    top: -18px;
+    left: 25px;
 }
-.about .desc h3{
-    color: #10828C;
+/*bottom quotation image*/
+.quote .quote-description:after{
+    content: "\f10e";
+    bottom: -18px;
+    right: 25px;
 }
-.about .desc p{
-    line-height:2;
-    color:#888;
+.quote-profile{
+    margin: 0 0 20px 0;
+    text-align: center;
+    position: relative;
 }
+.quote-profile .pic{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #d37602;
+    margin-bottom: 15px;
+}
+.quote-profile .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d37602;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+
 
 /* portfolio */
 .portfolio{
-    background-color: darkgrey;
-    margin: 4em 0;
-    padding: 1em;
+    background-color: ghostwhite;
+    margin: 4em 0 0 0;
+    padding: 1em 1em 3em 1em;
     position: relative;
 }
 .portfolio h1{
@@ -83,7 +142,7 @@
 }
 
 .project .row{
-    padding-top: 2em;
+    margin-top: 2em;
 }
 .project .item{
     position: relative;
@@ -94,23 +153,22 @@
     margin: 2em;
 }
 .project .card{
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 10px #ccc;
     height: 25em;
 }
 .project .card img{
-    width: 95%;
+    width: 88%;
     height: 12em;
 }
 .project .card-title{
     color:#F97300;
-
 }
 .project .card-body{
     padding: 1em;
     overflow-y: scroll;
 }
 
-/*Hover effect for projects*/
+/*Hover effect for projects
 .portfolio .item:hover .card{
     background:#f973007d;
     position: relative;
@@ -118,7 +176,7 @@
     top: 0;
     border-bottom-left-radius: 0;
     transition:.3s ease-in-out;
-}
+} */
 
 /* contact me */
 .contact-form{
@@ -127,7 +185,8 @@
     position: relative;
 }
 .contact-form h1{
-    margin: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
     color: #F97300;
 }
 .contact-form .form .btn-secondary{
@@ -141,16 +200,15 @@
 }
 
 /* social media */
-.social{
-    margin: 4em 0;
+.social{;
+    margin-top: 1em;
+    margin-bottom: 4em;
     padding: 1em;
     position: relative;
 }
-
 .social a {
     font-size: 2rem;
 }
-
 .contact-form h3 {
     color: #10828C;
     padding-bottom: 1em;
