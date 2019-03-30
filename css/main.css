@@ -213,3 +213,9 @@
     color: #10828C;
     padding-bottom: 1em;
 }
+
+/* footer */
+.page-footer{
+    background-color: #888888;
+    color: aliceblue;
+}
