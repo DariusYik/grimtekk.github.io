@@ -1,54 +1,82 @@
 /* navbar */
-.navbar{background-color: darkgrey;}
-.navbar-brand{margin-left: 2em !important;}
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
-.nav-link{ margin-right: 1em !important;}
-.nav-link:hover, .navbar-brand:hover{ color: #f97300; }
-.navbar-collapse{ justify-content: flex-end;}
-.navbar-toggler{  background:#fff !important;}
+.navbar {
+    background-color: darkgrey;
+}
+
+.navbar-brand {
+    margin-left: 2em !important;
+}
+
+.nav-link, .navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #f97300;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff !important;
+}
 
 /* header */
-.header{
+.header {
     background-image: url("../img/header1.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-.description{
+
+.description {
     position: absolute;
     top: 35%;
     left: 44%;
 }
-.description h1{
+
+.description h1 {
     color: ghostwhite;
 }
-.description button{
-    border:1px  solid #F97300;
-    background:#F97300;
-    color:#fff;
+
+.description button {
+    border: 1px solid #F97300;
+    background: #F97300;
+    color: #fff;
 }
 
 /* about me */
-.about{
+.about {
     margin: 4em 0;
     padding: 1em;
     position: relative;
 }
-.about h1{
-    color:#F97300;
+
+.about h1 {
+    color: #F97300;
     margin-top: 2em;
     margin-bottom: 1em;
 }
-.about img{
+
+.about img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
 }
-.quote .quote-content{
+
+.quote .quote-content {
     margin: 10px 0 50px 0;
     position: relative;
 }
-.quote .quote-content:after{
+
+.quote .quote-content:after {
     content: "";
     width: 20px;
     height: 20px;
@@ -61,7 +89,8 @@
     left: 0;
     right: 0;
 }
-.quote .quote-description{
+
+.quote .quote-description {
     padding: 25px 35px;
     margin: 0;
     background: #dca842;
@@ -70,10 +99,12 @@
     color: #fff;
     position: relative;
 }
+
 /*Boxes for the quotations*/
 .quote .quote-description:before,
-.quote .quote-description:after{
-    font-family: "Font Awesome 5 Free"; font-weight: 900;
+.quote .quote-description:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     width: 35px;
     height: 35px;
     line-height: 35px;
@@ -82,24 +113,28 @@
     background: #dca842;
     position: absolute;
 }
+
 /*top quotation image*/
-.quote .quote-description:before{
+.quote .quote-description:before {
     content: "\f10d";
     top: -18px;
     left: 25px;
 }
+
 /*bottom quotation image*/
-.quote .quote-description:after{
+.quote .quote-description:after {
     content: "\f10e";
     bottom: -18px;
     right: 25px;
 }
-.quote-profile{
+
+.quote-profile {
     margin: 0 0 20px 0;
     text-align: center;
     position: relative;
 }
-.quote-profile .pic{
+
+.quote-profile .pic {
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -107,7 +142,8 @@
     border: 3px solid #d37602;
     margin-bottom: 15px;
 }
-.quote-profile .title{
+
+.quote-profile .title {
     display: block;
     font-size: 20px;
     font-weight: 600;
@@ -119,17 +155,19 @@
 
 
 /* portfolio */
-.portfolio{
+.portfolio {
     background-color: ghostwhite;
     margin: 4em 0 0 0;
     padding: 1em 1em 3em 1em;
     position: relative;
 }
-.portfolio h1{
-    color:#F97300;
+
+.portfolio h1 {
+    color: #F97300;
     margin: 2em;
 }
-.project img{
+
+.project img {
     height: 15rem;
     width: 100%;
     margin: 1em;
@@ -141,29 +179,35 @@
     margin-bottom: 4em;
 }
 
-.project .row{
+.project .row {
     margin-top: 2em;
 }
-.project .item{
+
+.project .item {
     position: relative;
     overflow: hidden;
 }
-.project h1{
-    color:#F97300;
+
+.project h1 {
+    color: #F97300;
     margin: 2em;
 }
-.project .card{
+
+.project .card {
     box-shadow: 0 0 10px #ccc;
     height: 25em;
 }
-.project .card img{
+
+.project .card img {
     width: 88%;
     height: 12em;
 }
-.project .card-title{
-    color:#F97300;
+
+.project .card-title {
+    color: #F97300;
 }
-.project .card-body{
+
+.project .card-body {
     padding: 1em;
     overflow-y: scroll;
 }
@@ -179,43 +223,54 @@
 } */
 
 /* contact me */
-.contact-form{
+.contact-form {
     margin: 4em 0;
     padding: 1em;
     position: relative;
 }
-.contact-form h1{
+
+.contact-form h1 {
     margin-top: 2em;
     margin-bottom: 1em;
     color: #F97300;
 }
-.contact-form .form .btn-secondary{
-    background:  #F97300;
+
+.contact-form .form .btn-secondary {
+    background: #F97300;
     color: #fff;
-    border:0;
+    border: 0;
 }
-.contact-form .right .form-control::placeholder{
+
+.contact-form .right .form-control::placeholder {
     color: #888;
     font-size: 16px;
 }
 
 /* social media */
-.social{;
+.social {;
     margin-top: 1em;
     margin-bottom: 4em;
     padding: 1em;
     position: relative;
 }
+
 .social a {
     font-size: 2rem;
 }
+
 .contact-form h3 {
     color: #10828C;
     padding-bottom: 1em;
 }
 
 /* footer */
-.page-footer{
+.page-footer {
     background-color: #888888;
     color: aliceblue;
+}
+
+.footer-up {
+    float: right;
+    position: absolute;
+    right: 5%;
 }
