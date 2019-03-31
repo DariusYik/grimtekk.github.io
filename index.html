@@ -91,188 +91,205 @@
 <div class="portfolio" id="portfolio">
     <h1 class="text-center">Portfolio</h1>
 
-    <!-- work experience -->
-    <div class="container work" id="work">
-        <h2 class="text-center">Work Experience</h2>
-        <div class="row resume">
-            <a download href="./docs/DariusYikResume.pdf">
-                <button class="btn btn-secondary btn-block"><i class="fa fa-download"></i>Download Resume</button>
-            </a>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                <img class="img-fluid" src="img/sap-logo.svg">
-            </div>
-            <div class="col-lg-10 col-md-10 col-sm-10 col-10 desc">
-                <h3>SAP</h3>
-                <h6>Jan 2018 - Dec 2018</h6>
-                <h5>Business Intelligence Developer Intern</h5>
-                <p>
-                    I was a full-stack developer that created Java API endpoints for the marketing ETL pipeline.
-                </p>
-                <h5>D-Shop Software Engineer</h5>
-                <p>LastBytes</p>
-                <ul>
-                    <li>This project sorted waste using a camera to capture the item and
-                        AI to tell you the correct bin to the dispose of the garbage.
-                        I worked as a front-end developer helping to design the AngularJS webapp.
-                    </li>
-                </ul>
-                <p>Air Quality Analysis</p>
-                <ul>
-                    <li>This project used sensors to capture air quality data to be analyzed at the
-                        SAP Vancouver office.
-                        I worked as a full-stack developer helping to create Java API endpoints that
-                        the sensors could send data to, and helping design the webapp dashboard to
-                        display the air quality analytics.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                <img class="img-fluid" src="img/malachite-logo.svg">
-            </div>
-            <div class="col-lg-10 col-md-10 col-sm-10 col-10 desc">
-                <h3>Malachite Management</h3>
-                <h6>Sep 2016 - Dec 2016</h6>
-                <h5>Website Developer Intern</h5>
-                <p>
-                    I worked as a front-end developer to help migrate one of the company's
-                    client's website onto a new e-commerce platform, while designing new layouts,
-                    navigation structures and responsive webpages.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                <img class="img-fluid" src="img/gsc-full2.svg">
-            </div>
-            <div class="col-lg-10 col-md-10 col-sm-10 col-10 desc">
-                <h3>Genome Sciences Centre</h3>
-                <h6>Sep 2015 - Apr 2016</h6>
-                <h5>Client Support Technician</h5>
-                <p>
-                    I assisted end users in setting up accounts, managing permissions,
-                    workstation setup and providing orientation on company systems
-                </p>
-            </div>
-        </div>
-    </div>
+    <div class="row portfolio-container">
+        <h2 class="container">
+            <a class="work-btn" href="javascript:void(0);">Work Experience</a> | <a class="project-btn" href="javascript:void(0);">My Projects</a>
+        </h2>
 
-    <!-- projects -->
-    <div class="container project" id="project">
-        <h2 class="text-center">Projects</h2>
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-sm-12 item">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-fluid" src="img/ALBION.jpg">
-                    </div>
+        <!-- testing spacing
+        <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+            <a class="work-btn" href="javascript:void(0);">Work Experience</a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+            <h2 class="text-center"> | </h2>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+            <a class="project-btn" href="javascript:void(0);">My Projects</a>
+        </div>
+        -->
 
-                    <div class="card-body">
-                        <h4 class="card-title">ALBION</h4>
-                        <p class="card-text">
-                            Work In Progress!
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="card-link" href="https://github.com/grimtekk/ALBION" target="_blank">Read more</a>
-                    </div>
+        <!-- work experience -->
+        <div class="container portfolio-container work" id="work">
+            <div class="row resume">
+                <a download href="./docs/DariusYikResume.pdf">
+                    <button class="btn btn-secondary btn-block"><i class="fa fa-download"></i>Download Resume</button>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                    <img class="img-fluid" src="img/sap-logo.svg">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-10 desc">
+                    <h3>SAP</h3>
+                    <h6>Jan 2018 - Dec 2018</h6>
+                    <h5>Business Intelligence Developer Intern</h5>
+                    <p>
+                        I was a full-stack developer that created Java API endpoints for the marketing ETL pipeline.
+                    </p>
+                    <h5>D-Shop Software Engineer</h5>
+                    <p>LastBytes</p>
+                    <ul>
+                        <li>This project sorted waste using a camera to capture the item and
+                            AI to tell you the correct bin to the dispose of the garbage.
+                            I worked as a front-end developer helping to design the AngularJS webapp.
+                        </li>
+                    </ul>
+                    <p>Air Quality Analysis</p>
+                    <ul>
+                        <li>This project used sensors to capture air quality data to be analyzed at the
+                            SAP Vancouver office.
+                            I worked as a full-stack developer helping to create Java API endpoints that
+                            the sensors could send data to, and helping design the webapp dashboard to
+                            display the air quality analytics.
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-sm-12 item">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-fluid" src="img/stallfinderproject.jpg">
-                    </div>
-
-                    <div class="card-body">
-                        <h4 class="card-title">SAP Stall Finder</h4>
-                        <p class="card-text">
-                            Webapp to find where the open available bathroom stalls in the SAP Vancouver office.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="card-link" href="" target="_blank">Read more</a>
-                    </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                    <img class="img-fluid" src="img/malachite-logo.svg">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-10 desc">
+                    <h3>Malachite Management</h3>
+                    <h6>Sep 2016 - Dec 2016</h6>
+                    <h5>Website Developer Intern</h5>
+                    <p>
+                        I worked as a front-end developer to help migrate one of the company's
+                        client's website onto a new e-commerce platform, while designing new layouts,
+                        navigation structures and responsive webpages.
+                    </p>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-sm-12 item">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-fluid" src="img/mytinerary.png">
-                    </div>
-
-                    <div class="card-body">
-                        <h4 class="card-title">Mytinerary</h4>
-                        <p class="card-text">
-                            Webapp to find help travelers create an itenrary consiting of popular attractions in a
-                            location.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="card-link" href="https://github.com/grimtekk/mytinerary" target="_blank">Read more</a>
-                    </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                    <img class="img-fluid" src="img/gsc-full2.svg">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-10 desc">
+                    <h3>Genome Sciences Centre</h3>
+                    <h6>Sep 2015 - Apr 2016</h6>
+                    <h5>Client Support Technician</h5>
+                    <p>
+                        I assisted end users in setting up accounts, managing permissions,
+                        workstation setup and providing orientation on company systems
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-sm-12 item">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-fluid" src="img/sfucompanion.png">
-                    </div>
 
-                    <div class="card-body">
-                        <h4 class="card-title">Your SFU Companion</h4>
-                        <p class="card-text">
-                            Webapp to aggregate all of SFU's different student resources into one website!
-                        </p>
+        <!-- projects -->
+        <div class="container portfolio-container project" id="project">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="img/ALBION.jpg">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">ALBION</h4>
+                            <p class="card-text">
+                                Work In Progress!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://github.com/grimtekk/ALBION" target="_blank">Read more</a>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a class="card-link" href="https://github.com/grimtekk/Your-SFU-Companion" target="_blank">Read
-                            more</a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="img/stallfinderproject.jpg">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">SAP Stall Finder</h4>
+                            <p class="card-text">
+                                Webapp to find where the open available bathroom stalls in the SAP Vancouver office.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="img/mytinerary.png">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Mytinerary</h4>
+                            <p class="card-text">
+                                Webapp to find help travelers create an itenrary consiting of popular attractions in a
+                                location.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://github.com/grimtekk/mytinerary" target="_blank">Read more</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-sm-12 item">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-fluid" src="img/printerscript.png">
-                    </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="img/sfucompanion.png">
+                        </div>
 
-                    <div class="card-body">
-                        <h4 class="card-title">Printer Installation Script</h4>
-                        <p class="card-text">
-                            Bash script to automatically install the latest printer drivers onto macs on new deployment.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="card-link" href="https://github.com/grimtekk/Mac-Printer-Installer" target="_blank">Read
-                            more</a>
+                        <div class="card-body">
+                            <h4 class="card-title">Your SFU Companion</h4>
+                            <p class="card-text">
+                                Webapp to aggregate all of SFU's different student resources into one website!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://github.com/grimtekk/Your-SFU-Companion" target="_blank">Read
+                                more</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-lg-4 col-sm-12 item">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-fluid" src="img/mywebsite.png">
-                    </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="img/printerscript.png">
+                        </div>
 
-                    <div class="card-body">
-                        <h4 class="card-title">This Website!</h4>
-                        <p class="card-text">
-                            My one page website portfolio built using Bootstrap 4.
-                        </p>
+                        <div class="card-body">
+                            <h4 class="card-title">Printer Installation Script</h4>
+                            <p class="card-text">
+                                Bash script to automatically install the latest printer drivers onto macs on new deployment.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://github.com/grimtekk/Mac-Printer-Installer" target="_blank">Read
+                                more</a>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a class="card-link" href="https://github.com/grimtekk/grimtekk.github.io" target="_blank">Read
-                            more</a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 item">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="img/mywebsite.png">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">This Website!</h4>
+                            <p class="card-text">
+                                My one page website portfolio built using Bootstrap 4.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://github.com/grimtekk/grimtekk.github.io" target="_blank">Read
+                                more</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 

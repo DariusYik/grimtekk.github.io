@@ -172,10 +172,18 @@ html {
     margin: 2em;
 }
 
+.portfolio-container h2{
+    text-align: center;
+}
+
 .project img {
     height: 15rem;
     width: 100%;
     margin: 1em;
+}
+
+.one {
+    justify-content: right;
 }
 
 .resume {

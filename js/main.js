@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     $(".navbar-brand").hide();
+    $("#project").hide();
 
     // Scroll effect
     // interferes with nav background behaviour
@@ -27,4 +28,17 @@ $(document).ready(function () {
             $(".navbar-brand").fadeOut();
         }
     });
+
+    $(".work-btn").click( function() {
+        console.log("work button works");
+        $("#work").show();
+        $("#project").hide();
+    });
+
+    $(".project-btn").click( function() {
+        console.log("project button works");
+        $("#work").hide();
+        $("#project").show();
+    });
+
 })
