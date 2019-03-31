@@ -1,8 +1,8 @@
-/* navbar */
-.navbar {
-    background-color: darkgrey;
+html {
+    scroll-behavior: smooth;
 }
 
+/* navbar */
 .navbar-brand {
     margin-left: 2em !important;
 }
@@ -26,6 +26,11 @@
 
 .navbar-toggler {
     background: #fff !important;
+}
+
+.fixed-top.scrolled {
+    background-color: darkgrey !important; /* or #7f7f7f */
+    transition: background-color 1000ms linear;
 }
 
 /* header */
@@ -273,4 +278,9 @@
     float: right;
     position: absolute;
     right: 5%;
+}
+
+.footer-up i {
+    color: black;
+    font-size: 1.5em;
 }
