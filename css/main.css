@@ -160,6 +160,32 @@ html {
 
 
 /* portfolio */
+
+/*Tabs*/
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.tab a {
+    background-color: inherit;
+    display: inline-block;
+    /*float: left;*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.tabContent {
+    /*display: none;*/
+    padding: 6px 12px;
+    padding-bottom: 2em;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
 .portfolio {
     background-color: ghostwhite;
     margin: 4em 0 0 0;
@@ -172,10 +198,7 @@ html {
     margin: 2em;
 }
 
-.portfolio-container h2{
-    text-align: center;
-}
-
+/*Projects*/
 .project img {
     height: 15rem;
     width: 100%;
