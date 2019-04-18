@@ -166,18 +166,36 @@ html {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
 }
-.tab a {
-    background-color: inherit;
-    display: inline-block;
-    /*float: left;*/
+/*.tab a {*/
+/*    background-color: inherit;*/
+/*    display: inline-block;*/
+/*    !*float: left;*!*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    cursor: pointer;*/
+/*    padding: 14px 16px;*/
+/*    transition: 0.3s;*/
+/*    font-size: 17px;*/
+/*}*/
+
+.tab button {
+    width: 50%;
+    background:none;
     border: none;
-    outline: none;
+    margin: auto;
+    padding: auto;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+    font-size: 1.5em;
 }
+
+.tab button:focus {
+    outline: none;
+}
+
 .tabContent {
     /*display: none;*/
     padding: 6px 12px;
