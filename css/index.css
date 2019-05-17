@@ -1,0 +1,301 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+/*Text highlight for whole page*/
+::selection{
+  background: #888888;
+}
+
+.navbar {
+  background-image: url("../img/header1.jpg");
+  opacity: 0.65;
+}
+
+.nav-link::selection, .caption-border::selection, #horizontal-list::selection {
+  background: transparent;
+}
+
+.navbar-brand {
+  margin-left: 2em !important;
+}
+
+.nav-link, .navbar-brand {
+  color: #f4f4f4;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 5px;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  color: #68cac0;
+}
+
+ul#horizontal-list {
+  list-style: none;
+  white-space: nowrap;
+}
+
+ul#horizontal-list li {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.fixed-top.scrolled {
+  background-color: darkgrey !important; /* or #7f7f7f */
+  transition: background-color 1000ms linear;
+}
+
+.front {
+  /* The image used */
+  background-image: url("../img/header1.jpg");
+  opacity: 0.65;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.caption-border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px 11px 18px 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+/* general formatting */
+.sections {
+  margin: 4em 1em;
+  padding: 1em;
+  position: relative;
+}
+
+.sections h1 {
+  color: #68cac0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.hr-section {
+  height: 1px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hr-content{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #fff;
+}
+
+/* about me */
+.about img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.quote .quote-content {
+  margin: 10px 0 50px 0;
+  position: relative;
+}
+
+.quote .quote-content:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-top: 20px solid #000;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  opacity: 0.65;
+}
+
+.quote .quote-description {
+  padding: 25px 35px;
+  margin: 0;
+  background: #000;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  opacity: 0.65;
+}
+
+/*Boxes for the quotations*/
+.quote .quote-description:before,
+.quote .quote-description:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 8px;
+  text-align: center;
+  background: #000;
+  position: absolute;
+}
+
+/*top quotation image*/
+.quote .quote-description:before {
+  content: "\f10d";
+  top: -18px;
+  left: 25px;
+}
+
+/*bottom quotation image*/
+.quote .quote-description:after {
+  content: "\f10e";
+  bottom: -18px;
+  right: 25px;
+}
+
+.quote-profile {
+  margin: 0 0 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.quote-profile .pic {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #68cac0;
+  margin-bottom: 15px;
+}
+
+.quote-profile .title {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #68cac0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 7px 0;
+}
+
+/* Portfolio */
+div.portfolio-choose {
+  display: table;
+  width: 50%;
+  table-layout: fixed;
+}
+
+div.portfolio-choose span{
+  display: table-cell;
+  text-align: center;
+}
+
+.work-btn, .project-btn {
+  font-size: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dummy-line{
+  font-size: 20px;
+}
+
+.portfolio-content {
+  padding: 25px 35px;
+  margin: 0;
+  background: #000;
+  border-radius: 15px;
+  color: #fff;
+  position: relative;
+  opacity: 0.65;
+  font-size: 17px;
+}
+
+.portfolio-container {
+  margin: 0 4em;
+  padding: 1em;
+  position: relative;
+}
+
+/*Projects*/
+.project img {
+  height: 15rem;
+  width: 100%;
+  margin: 1em;
+}
+
+.project .row {
+  margin-top: 2em;
+}
+
+.project .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.project h1 {
+  color: #68cac0;
+  margin: 2em;
+}
+
+.project .card {
+  box-shadow: 0 0 10px #ccc;
+  height: 25em;
+}
+
+.project .card img {
+  width: 88%;
+  height: 12em;
+}
+
+.project .card-title {
+  color: #68cac0;
+}
+
+.project .card-body {
+  padding: 1em;
+  overflow-y: scroll;
+}
+
+
+
+/*footer*/
+.img-btn {
+  font-size: 50px;
+  color: #68cac0;
+}
+
+.social a {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.up-btn {
+  color: #68cac0;
+}
+

@@ -1,50 +1,227 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Darius Yik</title>
 
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <meta http-equiv="Content-Language" content="en"> <!-- Gets rid of the google translate -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap 4-->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
 
-  <title>Darius Yik</title>
-  <link rel="stylesheet" href="index.css">
-  <link href="https://fonts.googleapis.com/css?family=Playball|Satisfy|Kaushan+Script" rel="stylesheet">
-  
-<!--Smooth Scrolling-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    <!--CSS-->
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='js/index.js' type="text/javascript"></script>
 
 </head>
 
-<body>
-<a id="top" class="scroll"></a>
 
-<!--<div class="headbar">-->
-<div class="header">Darius Yik</div>
-<div class="header">Under Development</div>
+<body>
+<!-- navbar -->
+<nav class="navbar fixed-top" role="navigation">
+    <a class="navbar-brand" data-value="top" href="#"><!--HOME--></a>
+    <div>
+        <ul id="horizontal-list">
+            <li>
+                <a class="nav-link" href="#about">ABOUT ME</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#portfolio">PROJECTS</a>
+            </li>
+            <!--            <li>-->
+            <!--                <a class="nav-link" href="#contact">CONTACT</a>-->
+            <!--            </li>-->
+        </ul>
+    </div>
+</nav>
+
+<!-- Landing Page Image -->
+<div class="front" id="top">
+    <div class="caption">
+        <span class="caption-border">DARIUS YIK</span>
+    </div>
+</div>
+
+<!-- About Me -->
+<div class="about sections" id="about">
+    <div class="container">
+        <h1 class="text-center">About Me</h1>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="quote">
+                    <div class="quote-content">
+                        <p class="quote-description text-center">
+                            I am a software engineer from Vancouver, British Columbia, Canada!
+                            I currently study the joint major in computer science and biochemistry at Simon Fraser
+                            University, and I graduate this summer! In my free time I enjoy hanging out with
+                            friends to watch movies, play boardgames, escape rooms, League of Legends, and eating out.
+                            I also love playing sports such as badminton, ping pong, ultimate frisbee, hiking,
+                            or just any physical activity in general!
+                        </p>
+                    </div>
+                    <div class="quote-profile">
+                        <div class="pic">
+                            <img alt="" src="img/me.jpg">
+                        </div>
+                        <h3 class="title">
+                            Darius Yik
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="hr-section">
+
+<!-- Portfolio -->
+<div class="portfolio sections" id="portfolio">
+    <h1 class="text-center">My Projects</h1>
+    <!-- projects -->
+    <div class="portfolio-container project" id="project">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-12 item">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="img-fluid" src="img/ALBION.jpg">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">ALBION</h4>
+                        <p class="card-text">
+                            Work In Progress!
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/grimtekk/ALBION" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 item">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="img-fluid" src="img/stallfinderproject.jpg">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">SAP Stall Finder</h4>
+                        <p class="card-text">
+                            Webapp created for the SAP iXP intern hackathon to find where the open available bathroom
+                            stalls
+                            in the SAP Vancouver office. My group won first place for the technical track!
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 item">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="img-fluid" src="img/mytinerary.png">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Mytinerary</h4>
+                        <p class="card-text">
+                            Webapp created during Hack the North 2018 hackathon to find help travelers create an
+                            itenrary
+                            consiting of popular attractions in a location.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/grimtekk/mytinerary" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-12 item">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="img-fluid" src="img/sfucompanion.png">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Your SFU Companion</h4>
+                        <p class="card-text">
+                            Webapp created for my CMPT276 group project to aggregate all of SFU's different student
+                            resources into
+                            one website!
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/grimtekk/Your-SFU-Companion" target="_blank">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 item">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="img-fluid" src="img/printerscript.png">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Printer Installation Script</h4>
+                        <p class="card-text">
+                            Bash script I created during my Genome Sciences Centre internship to automatically install
+                            the
+                            latest printer drivers onto macs on new deployment.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/grimtekk/Mac-Printer-Installer" target="_blank">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 item">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="img-fluid" src="img/mywebsite.png">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">This Website!</h4>
+                        <p class="card-text">
+                            My one page website portfolio built using Bootstrap 4 and jQuery.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/grimtekk/grimtekk.github.io" target="_blank">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer">
+    <div class="text-center social">
+        <a href="https://www.instagram.com/dee_arius/" target="_blank">
+            <i aria-hidden="true" class="img-btn fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/darius-yik/" target="_blank">
+            <i aria-hidden="true" class="img-btn fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/grimtekk" target="_blank">
+            <i aria-hidden="true" class="img-btn fab fa-github"></i>
+        </a>
+    </div>
+    <div class="footer-copyright text-center py-3">© Copyright 2019 Darius Yik - All rights reserved.
+        <a class="footer-up" href="#top"><i class="up-btn fas fa-chevron-circle-up"></i></a>
+    </div>
+</footer>
+
+
+</body>
+</html>
