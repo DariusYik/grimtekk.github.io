@@ -11,7 +11,7 @@ body, html {
 }
 
 .navbar {
-  background-image: url("../img/header1.jpg");
+  background-image: url("header1.jpg");
   opacity: 0.65;
 }
 
@@ -55,7 +55,7 @@ ul#horizontal-list li {
 
 .front {
   /* The image used */
-  background-image: url("../img/header1.jpg");
+  background-image: url("header1.jpg");
   opacity: 0.65;
 
   /* Full height */
