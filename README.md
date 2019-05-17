@@ -1,3 +1,5 @@
+https://grimtekk.github.io/
+
 # My Website v1.0
 
 Built using bootstrap 4, HTML, CSS, and jQuery.
@@ -8,5 +10,6 @@ Things to work on:
 * Include a contact me section
 * Better animations
 * Code clean up
+* Make nav bar collapse 
 
 Last modified: May 16, 2019
